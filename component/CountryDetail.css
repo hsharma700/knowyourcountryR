@@ -1,0 +1,230 @@
+.btn-container {
+  margin-block: 50px 0;
+  max-width: 1290px;
+  margin-inline: auto;
+  color: var(--text-color);
+}
+
+.btn-container i {
+  font-size: 15px;
+  margin-right: 10px;
+}
+.btn-container button {
+  color: inherit;
+  background-color: var(--element-color);
+  font-size: 15px;
+  padding: 10px 40px;
+  border: none;
+  font-weight: 600;
+  border-radius: 5px;
+  box-shadow: 0 1px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.btn-container button:hover {
+  box-shadow: 0 1px 2px 2px rgba(0, 0, 0, 0.2);
+}
+/* loading details */
+
+.loading-detail {
+  display: flex;
+  height: 100vh;
+  gap: 40px;
+}
+
+.loading-detail .img-div {
+  margin-block: 40px;
+  width: 45%;
+  overflow: hidden;
+  max-height: 400px;
+  background-color: rgba(128, 128, 128, 0.154);
+  box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.2);
+}
+
+.loading-detail .detail-div {
+  width: 50%;
+  padding-block: 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.loading-detail .title-div {
+  width: 80%;
+  overflow: hidden;
+  height: 50px;
+  background-color: rgba(128, 128, 128, 0.154);
+  border-radius: 5px;
+  box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.2);
+}
+.loading-detail .info-div {
+  width: 80%;
+  overflow: hidden;
+  height: 250px;
+  background-color: rgba(128, 128, 128, 0.154);
+  border-radius: 5px;
+  box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.2);
+}
+.loading-detail .border-div {
+  width: 80%;
+  overflow: hidden;
+  height: 60px;
+  background-color: rgba(128, 128, 128, 0.154);
+  border-radius: 5px;
+  box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.2);
+}
+
+/* end loading details */
+
+.profile-container {
+  padding-block: 50px 100px;
+  max-width: 1290px;
+  min-height: 100vh;
+  margin-inline: auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 80px;
+  color: var(--text-color);
+}
+
+.profile-container .profile-img {
+  max-width: 45%;
+}
+
+.profile-container .profile-img img {
+  width: 100%;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+.profile-info-container {
+  width: 55%;
+  max-height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.profile-title {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.profile-title h1 {
+  margin-bottom: 15px;
+  font-weight: 800;
+}
+
+.profile-other {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 10px;
+  column-gap: 80px;
+}
+
+.profile-other .info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.profile-border-country {
+  margin-top: 30px;
+}
+
+.profile-border-country .border-aHref {
+  padding: 5px 10px;
+  text-align: center;
+  display: inline-block;
+  min-width: 100px;
+  outline: none;
+  border: none;
+  border-radius: 2px;
+  box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.1);
+  margin: 5px;
+  background-color: var(--element-color);
+  font-weight: 600;
+  opacity: 0.8;
+  cursor: pointer;
+}
+.profile-border-country .border-aHref:hover {
+  background-color: var(--element-color);
+  box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.2);
+  opacity: 1;
+}
+
+@media (max-width: 750px) {
+  .btn-container {
+    margin-block: 20px 0;
+  }
+
+  .btn-container i {
+    font-size: 12px;
+  }
+  .btn-container button {
+    font-size: 12px;
+    padding: 5px 20px;
+  }
+
+  .loading-detail-container {
+    flex-direction: column;
+  }
+
+  .loading-detail-container .img-div {
+    max-width: 100%;
+  }
+  .loading-detail-container .img-div img {
+    width: 100%;
+    height: 100%;
+  }
+  .loading-detail-container .detail-div {
+    max-width: 100%;
+  }
+  .loading-detail-container .detail-div img {
+    max-width: 100%;
+  }
+
+  .profile-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 20px;
+    padding-block: 40px 100px;
+  }
+
+  .profile-container .profile-img {
+    max-width: 100%;
+    padding-inline: 10px;
+  }
+
+  .profile-container .profile-img img {
+    width: 100%;
+    border-radius: 5px;
+  }
+
+  .profile-info-container {
+    width: 100%;
+    padding-inline: 10px;
+  }
+
+  .profile-title {
+    width: 100%;
+  }
+
+  .profile-title h1 {
+    margin-inline: auto;
+    font-size: 25px;
+  }
+
+  .profile-other .info {
+    font-size: 12px;
+  }
+
+  .profile-border-country {
+    margin-top: 30px;
+    font-size: 12px;
+  }
+
+  .profile-border-country button {
+    font-size: 10px;
+  }
+}
