@@ -130,7 +130,7 @@ a {
   gap: 30px;
   max-width: 1290px;
   margin-inline: auto;
-  padding-top: 30px;
+  padding-block: 30px;
   display: grid;
 }
 

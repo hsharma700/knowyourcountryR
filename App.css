@@ -29,6 +29,8 @@
     color: var(--text-color);
 }
 
+
+
 a{
     color: inherit;
     text-decoration: none;
@@ -126,7 +128,7 @@ a{
 
 .countries-container{
     max-width: 1290px;
-    padding-top: 30px;
+    padding-block: 30px;
     margin-inline: auto;
     gap: 30px;
     display: grid;
